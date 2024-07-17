@@ -11,7 +11,7 @@ dotenv.config();
 const mongoUri = 'mongodb+srv://ouailamarir:tVZPJHkx2YminMGo@cluster0.wqwqh4b.mongodb.net/testLBA?retryWrites=true&w=majority&appName=Cluster0';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3001;
 
 // Configuration de NextCors pour toutes les routes
 app.use(cors());
