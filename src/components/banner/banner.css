@@ -1,0 +1,66 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+}
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 2rem !important;
+    min-height: 0rem !important;
+}
+.logo-side {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.logo {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0.15rem;
+}
+.menu {
+    gap: 1.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .875rem;
+    font-weight: 600;
+    flex-grow: 1;
+}
+.menu a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.shoppingLogo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar {
+    flex-grow: 10; 
+    display: flex;
+    justify-content: center;
+}
+.paper {
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: none !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.226);
+    border-radius: 0.375rem !important;
+    width:100%
+}
+.search-icon {
+    position: absolute;
+}
+.login-side {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+li {
+    list-style: none;
+}

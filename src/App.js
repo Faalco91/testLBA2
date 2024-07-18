@@ -4,12 +4,12 @@ import Cards from './components/cards/cards.js'
 
 function App() {
   return (
-    <>
+    <div className='body'>
       <Banner />
       <main className='main'>
         <Cards />
       </main>
-    </>
+    </div>
   );
 }
 

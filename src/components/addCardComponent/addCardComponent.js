@@ -7,7 +7,7 @@ import {Modal} from '@mui/material';
 import {TextField} from '@mui/material';
 import {Rating} from '@mui/material';
 import {Stack} from '@mui/material';
-import './addCardComponent.module.css';
+import './addCardComponent.css';
 
 const style = {
   position: 'absolute',
@@ -75,7 +75,7 @@ export default function AddCardComponent({ onPhoneCreate }) {
   return (
     <div>
       <Button onClick={handleOpen} variant="contained" color="primary">
-        Ajouter un téléphone
+        Ajouter un produit
       </Button>
       <Modal
         open={open}
@@ -89,35 +89,35 @@ export default function AddCardComponent({ onPhoneCreate }) {
           </Typography>
           <Box component="form" sx={{ mt: 4 }}>
           <TextField
-                label="ID"
+                label="ID (0)"
                 value={identif}
                 onChange={(e) => setIdentif(e.target.value)}
                 fullWidth
                 sx={{ mb: 3 }}
               />  
               <TextField
-                label="Disponibilité"
+                label="Disponibilité (true)"
                 value={available}
                 onChange={(e) => setAvailable(e.target.value)}
                 fullWidth
                 sx={{ mb: 3 }}
               />   
             <TextField
-              label="Nom"
+              label="Nom (AC0 Phone0)"
               value={name}
               onChange={(e) => setName(e.target.value)}
               fullWidth
               sx={{ mb: 3 }}
             />
             <TextField
-              label="Type"
+              label="Type (phone)"
               value={type}
               onChange={(e) => setType(e.target.value)}
               fullWidth
               sx={{ mb: 3 }}
             />
             <TextField
-              label="Garantie (années)"
+              label="Garantie (2)"
               value={warrantyYears}
               onChange={(e) => setWarrantyYears(e.target.value)}
               fullWidth

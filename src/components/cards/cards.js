@@ -43,7 +43,7 @@ export default function Cards() {
     };
 
     return (
-      <div>
+      <div className='container'>
         <div className='addPhoneButton'>
           <AddCardComponent onPhoneCreate={handlePhoneCreate} />
         </div>
