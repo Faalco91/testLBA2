@@ -1,0 +1,60 @@
+.price {
+    font-Size: 0.875rem;
+    font-Weight: 500;
+ }
+ .rating {
+    color: #0E1016;
+    font-size: 0.875rem;
+ }
+ .modifRating {
+    color: #0E1016;
+    font-size: 1.5rem;
+ }
+
+.cardContainer {
+    position: relative;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+    min-Width: 275px;
+    line-height: 1.5rem;
+}
+ .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap:0.375rem; 
+ }
+ .editIcon {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .deleteIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+
+ .button {
+    min-width: 0 !important;
+ }
+
+ .available {
+   position: absolute;
+   bottom: 0.8rem;
+   right: 0.8rem;
+   border-radius: 1rem;
+   padding: 0.5rem 0.8rem;
+   color:  white;
+   background-color: green;
+ }
+ .notAvailable {
+   position: absolute;
+   bottom: 0.8rem;
+   right: 0.8rem;
+   border-radius: 1rem;
+   padding: 0.5rem 0.8rem;
+   color: aliceblue;
+   background-color: red;
+ }

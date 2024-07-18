@@ -1,0 +1,11 @@
+.cardsContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+}
+.addPhoneButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+}
