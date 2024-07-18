@@ -2,11 +2,11 @@
     font-Size: 0.875rem;
     font-Weight: 500;
  }
- .rating {
-    color: #0E1016;
-    font-size: 0.875rem;
+ .rating span {
+   color: #0E1016;
+   font-size: 0.875rem;
  }
- .modifRating {
+ .modifRating span {
     color: #0E1016;
     font-size: 1.5rem;
  }
@@ -57,4 +57,7 @@
    padding: 0.5rem 0.8rem;
    color: aliceblue;
    background-color: red;
+ }
+ .test {
+   color: red;
  }
