@@ -8,7 +8,7 @@ import phonesRoutes from './routes/phonesRoutes.js';
 dotenv.config();
 
 
-const mongoUri = 'mongodb+srv://ouailamarir:tVZPJHkx2YminMGo@cluster0.wqwqh4b.mongodb.net/testLBA?retryWrites=true&w=majority&appName=Cluster0';
+const mongoUri = process.env.MONGO_URI;
 
 const app = express();
 const PORT = 3001;
@@ -22,7 +22,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //Modification du DNS en utilisant le DNS public de google pour pouvoir se connecter à mongoDB.
-mongoose.connect(mongoUri)
+mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('Connexion à MongoDB réussie !'))
 .catch((error) => console.log('Connexion à MongoDB échouée !', error));
 
