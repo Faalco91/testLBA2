@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Card, CardContent, Button, Typography, Modal, Rating, Stack, TextField } from '@mui/material';
-import  EditNoteIcon from '@mui/icons-material/EditNote.js';
-import  DeleteOutlineIcon from '@mui/icons-material/DeleteOutline.js';
+import { EditNote, DeleteOutline } from '@mui/icons-material';
 import './cardComponent.css'
 
 const style = {
@@ -16,7 +15,7 @@ const style = {
   p: 4,
 };
 const updatePhone = async (id, updatedPhone) => {
-  const res = await fetch(`http://localhost:3000/api/phones/${id}`, {
+  const res = await fetch(`http://localhost:3001/api/phones/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
@@ -29,7 +28,7 @@ const updatePhone = async (id, updatedPhone) => {
   return res.json();
 };
 const deletePhone = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/phones/${id}`, {
+  const res = await fetch(`http://localhost:3001/api/phones/${id}`, {
     method: 'DELETE',
   });
   if (!res.ok) {
@@ -94,7 +93,9 @@ export default function CardComponent({ phone, onPhoneUpdate, onPhoneDelete }) {
     <Card className='cardContainer'>
       <div className='editIcon'>
         <div >
-          <Button className='button' onClick={handleOpen}></Button>
+          <Button className='button' onClick={handleOpen}>
+            <EditNote />
+          </Button>
           <Modal
           open={open}
           onClose={handleClose}
@@ -175,7 +176,9 @@ export default function CardComponent({ phone, onPhoneUpdate, onPhoneDelete }) {
           </Modal>
         </div>
         <div>
-          <Button sx={{paddingLeft: '0'}} onClick={handleDelete} className='button'></Button>
+          <Button sx={{paddingLeft: '0'}} onClick={handleDelete} className='button'>
+            <DeleteOutline />
+          </Button>
         </div>
 
       </div>
